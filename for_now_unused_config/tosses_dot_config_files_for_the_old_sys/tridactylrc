@@ -1,0 +1,2 @@
+bind mp hint -A mpv "js window.location.href = 'mpv://' + window.unsafeWindow.Mp4Link.href"
+

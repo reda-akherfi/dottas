@@ -1,0 +1,8 @@
+[General]
+DisplayName=fun_s02p01
+Path[$e]=file:$HOME/fun_s02p01
+
+[KFileDialog Settings]
+Recent Files[$e]=fun_s02p01,file:$HOME/fun_s02p01
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16

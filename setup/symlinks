@@ -1,0 +1,29 @@
+# hyprland-git
+ln -sf ~/dottas/.config/hypr ~/.config/hypr
+# waybar
+ln -sf ~/dottas/.config/waybar ~/.config/waybar
+# alacritty
+ln -sf ~/dottas/.config/alacritty ~/.config/alacritty
+# wlogout-git aur
+# ln -s ~/dottas/.config/wlogout ~/.config/wlogout
+# swaylock-effects aur
+# ln -s ~/dottas/.config/swaylock ~/.config/swaylock
+# bash
+# if [ -f ~/.bashrc ]; then rm ~/.bashrc; fi
+# ln -sf ~/dottas/other_configs/.bashrc ~/.bashrc
+# if [ -f ~/.inputrc ]; then rm ~/.inputrc; fi
+# ln -sf ~/dottas/other_configs/.inputrc ~/.inputrc
+# wofi
+ln -sf ~/dottas/.config/wofi ~/.config/wofi
+ln -sf ~/dottas/.config/wlogout ~/.config/wlogout
+ln -sf ~/dottas/.config/swaylock ~/.config/swaylock
+ln -sf ~/dottas/.config/swayidle ~/.config/swayidle
+ln -sf ~/dottas/.config/mpv ~/.config/mpv
+ln -sf ~/dottas/other_configs/.bashrc ~/.bashrc
+ln -sf ~/dottas/other_configs/.inputrc ~/.inputrc
+ln -sf ~/dottas/.config/vim  ~/.config/vim
+ln -sf ~/dottas/.config/vim/.vimrc  ~/.vimrc
+ln -sf ~/dottas/.config/nvim  ~/.config/nvim
+
+
+

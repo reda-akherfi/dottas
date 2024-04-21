@@ -1,0 +1,46 @@
+* {
+  font-family: RobotoMono Nerd Font Prop;
+  color: #e5e9f0;
+  background: transparent;
+  font-weight: 700;
+  font-size:1.03em;
+}
+
+#window {
+  background: rgba(41, 46, 66, 0.8);
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 5px solid #5e81ac;
+}
+
+#input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+#outer-box {
+  padding: 20px;
+}
+
+#img {
+  margin-right: 0px;
+}
+
+#entry {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#entry:selected {
+  background-color: #5e81ac;
+}
+
+#text {
+  margin: 2px;
+}
+#text:selected {
+  margin: 2px;
+  color: black;
+}

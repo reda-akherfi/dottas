@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+
+    
+IP_ADDR_ANDROID=192.168.1.3
+PORT_SSH=8022
+USER_ANDROID=u0_a1040
+ANDROID_DIR_TO_SYNC=/data/data/com.termux/files/home/storage/anarchsync/
+ARCH_DIR_TO_SYNC=/home/reda/android_arch/
+IDENTITY_FILE="/home/reda/.ssh/id_ed25519"
+
+echo "hello Mr REDA:"
+
+PGREP_SSH_AGENT="$(pgrep ssh-agent)"
+if  pgrep ssh-agent > /dev/null ;then
+    echo "an ssh agent is already running with PID ---> $PGREP_SSH_AGENT"
+else
+    eval $(ssh-agent -s)
+    echo "$? ssh-agent -s"
+    PGREP_SSH_AGENT="$(pgrep ssh-agent)"
+    echo "started an ssh agent with the PID :::: $PGREP_SSH_AGENT"
+fi
+
+SSH_AGENT_PID=${PGREP_SSH_AGENT} SSH_AUTH_SOCK=$(sudo find /tmp -type s -iname agent.*) sudo ssh-add "$IDENTITY_FILE"
+echo "added the key"
+SSH_AGENT_PID="${PGREP_SSH_AGENT}" SSH_AUTH_SOCK="$(sudo find /tmp -type s -iname agent.*)" sudo ssh-add -l -v
+
+SSH_AGENT_PID="${PGREP_SSH_AGENT}" SSH_AUTH_SOCK="$(sudo find /tmp -type s -iname agent.*)" rsync -avz -e "ssh -p ${PORT_SSH} " --info=progress2 ${IP_ADDR_ANDROID}:${ANDROID_DIR_TO_SYNC} ${ARCH_DIR_TO_SYNC}
+SSH_AGENT_PID="${PGREP_SSH_AGENT}" SSH_AUTH_SOCK="$(sudo find /tmp -type s -iname agent.*)" rsync -avz -e "ssh -p ${PORT_SSH} " --info=progress2 ${ARCH_DIR_TO_SYNC} ${IP_ADDR_ANDROID}:${ANDROID_DIR_TO_SYNC} 

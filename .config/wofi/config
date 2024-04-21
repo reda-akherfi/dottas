@@ -1,0 +1,33 @@
+key_down=Ctrl-j
+allow_images=true
+prompt=
+image_size=30
+key_up=Ctrl-k
+
+
+# If true activiating a search with enter will execute the search not the first result, default is false.
+matching=fuzzy
+insensitive=true
+# content_halign=center
+# valign=center
+# halign=center
+filter_rate=10
+key_pgdn=Ctrl-l
+key_pgup=Ctrl-h
+key_exit=bracketleft
+dmenu-parse_action=true
+run-always_parse_args=true
+
+#xoffset=270
+#yoffset=275
+show=drun
+width=1000
+#height=500
+always_parse_args=true
+show_all=true
+print_command=true
+#layer=overlay
+style=/home/reda/dottas/.config/wofi/themes/style.css
+location=center
+lines=9
+pre_display_exec=true

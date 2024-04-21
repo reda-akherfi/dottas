@@ -1,0 +1,11 @@
+[cache]
+TrashCollection=20
+TrashCollectionMigrated=true
+
+[idle]
+IdleRidPath=/INBOX,imap://redaakherfi07@gmail.com@imap.gmail.com/
+
+[network]
+Authentication=9
+ImapServer=imap.gmail.com
+UserName=redaakherfi07@gmail.com

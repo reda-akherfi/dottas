@@ -1,0 +1,11 @@
+
+--fork, -f : allows for the terminal to be closed
+--dmenu, -d : dmenu  mode
+--show, -S <mode> : 
+--prompt, -p :
+-t, -term=<alacritty>:
+-P, --password: *****
+-e, --exec-search:  Activiating a search with enter will execute the search not the first result.
+--matching, -M: contains, multi-contains, or fuzzy, default is contains.
+--insensitive, -i:
+

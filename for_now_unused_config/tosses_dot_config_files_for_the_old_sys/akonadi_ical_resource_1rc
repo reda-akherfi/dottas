@@ -1,0 +1,8 @@
+[General]
+DisplayName=inpt_s02p01
+Path[$e]=file:$HOME/inpt_s02p01
+
+[KFileDialog Settings]
+Recent Files[$e]=inpt_s02p01,file:$HOME/inpt_s02p01
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16

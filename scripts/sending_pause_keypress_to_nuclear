@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# this had a bit of a problem
+# # hyprctl dispatch focusXKB_KEY_Super_Ldow nuclear
+# sleep 0.5
+# wtype -k space
+# sleep 0.5
+# hyprctl dispatch focuscurrentorlast
+# sleep 0.5
+# wtype -k Right
+# wtype -k Left
+
+# wtype -M XKB_KEY_Super_L
+# sleep 0.5
+# wtype -k 7
+# sleep 0.5
+# wtype -m XKB_KEY_Super_L
+# sleep 0.5
+# wtype -k space
+# sleep 0.5
+# wtype -M XKB_KEY_Super_L
+# sleep 0.5
+# wtype -k Tab
+# sleep 0.5
+# wtype -m XKB_KEY_Super_L
+# sleep 0.5
+
+# starting the daemon
+# sudo -b ydotoold --socket-path="$HOME/.ydotool_socket" --socket-own="$(id -u):$(id -g)"
+# YDOTOOL_SOCKET="$HOME/.ydotool_socket" ydotool key 125:1 32:1 32:0 125:0
+# left meta: 125; space: 57; tab: 15; 7==7+1=8
+YDOTOOL_SOCKET="$HOME/.ydotool_socket" ydotool key 125:1 7:1 7:0 125:0 57:1 57:0 125:1 15:1 15:0 125:0
+

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+
+# waybar needs me to be part of the input group
+sudo usermod -aG input reda
+# while you are it you might as well
+sudo usermod -aG video       reda
+sudo usermod -aG power       reda
+sudo usermod -aG audio       reda
+sudo usermod  -aG  storage   reda
+sudo usermod -aG  wheel reda 
+# settinh the font for the console
+sudo echo "FONT=ter-132b" >> /etc/vconsole.conf
+# setting up bash-completion
+echo -e "# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion" >> ~/dottas/other_configs/.bashrc

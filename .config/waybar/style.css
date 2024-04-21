@@ -1,0 +1,143 @@
+@import "nord.css";
+
+window {
+    background-color: transparent;
+}
+
+* {
+    font-family: RobotoMono Nerd Font Propo;
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+/*
+* Left part
+*/
+#mode {
+    color: @nord0;
+    background-color: @nord13;
+    margin-left: 12px;
+    border-radius: 5px;
+    padding: 0px 6px;
+}
+
+#workspaces {
+	border-radius: 7px;
+	padding: 0px 0px;
+    background-color: @nord3;
+	margin: 0px 0px;
+}
+#workspaces button {
+    margin-left: 0px;
+    background-color: @nord3;
+    padding: 0px 0px;
+    color: @nord6;
+    margin-top: 0;
+}
+
+#workspaces button.active {
+    color: @nord0;
+    background-color: @nord8;
+}
+
+#window {
+    margin-left: 10px;
+    color: @nord6;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+/*
+* Right part
+*/
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#backlight,
+#language,
+#battery,
+#clock,
+#wireplumber,
+#custom-weather,
+#tray {
+    background-color: @nord3;
+    padding: 0px 7px;
+    /* color: @nord6; */
+    color: @nord6;
+}
+
+#backlight,
+#language,
+#battery,
+#clock,
+#tray {
+    margin-right: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#pulseaudio,
+#network,
+#clock,
+#tray {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#pulseaudio.muted {
+    background-color: @nord13;
+    /* color: @nord3; */
+    color: black;
+}
+
+#pulseaudio, #backlight {
+    background-color: @nord3;
+    color: @nord6;
+}
+
+#network, #cpu, #memory, #battery {
+    background-color: @nord3;
+    color: @nord6;
+}
+
+#tray {
+    background-color: @nord3;
+}
+
+#network.disabled, 
+#network.disconnected {
+    background-color: @nord13;
+    color: @nord0; 
+}
+
+#battery.warning {
+    background-color: @nord13;
+    color: @nord0; 
+}
+
+#battery.critical {
+    background-color: @nord11;
+    color: @nord0; 
+}
+
+#tray menu {
+    background-color: @nord2;
+    color: @nord4;
+    padding: 10px 5px;
+    border: 2px solid @nord1;
+}
+.modules-right {
+    background-color: @nord3;
+    border-radius: 12px;
+    margin: 0px;
+}
+.modules-left {
+    margin:0px;
+    border-radius: 12px;
+}
+#backlight  #battery #clock {
+    background-color: @nord3;
+    color: @nord6;
+}

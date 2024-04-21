@@ -1,0 +1,7 @@
+[General]
+Path[$e]=file:$HOME/tweaks
+
+[KFileDialog Settings]
+Recent Files[$e]=tweaks,file:$HOME/tweaks
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16

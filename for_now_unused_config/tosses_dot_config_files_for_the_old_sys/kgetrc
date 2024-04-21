@@ -1,0 +1,32 @@
+[Advanced]
+AutoPaste=true
+EnableKUIServerIntegration=true
+ExpiryTimeValue=1
+KonquerorIntegration=true
+
+[Appearance]
+HeaderState=AAAA/wAAAAAAAAABAAAAAQAAAB4AAAAAAAAAAAAAAAAAAAAAAAAAA7IAAAAGAQEAAQAAAAAAAAAAAAAAAGQAAABQAAAAhAAAAAAAAAAGAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAABvgAAAAEAAAAAAAAD6AAAAABk
+
+[Internal]
+FirstRun=false
+LastDirectory[$e]=$HOME/Downloads/
+LastGroup=My Downloads
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/void-live-x86_64-20230628-base.iso,file:$HOME/Downloads/void-live-x86_64-20230628-base.iso
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=16
+
+[MainWindow]
+1920x1080 screen: Height=524
+1920x1080 screen: Width=956
+1920x1080 screen: XPosition=0
+1920x1080 screen: YPosition=24
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAA7wAAAHRAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAYAGsAZwBlAHQAXwB0AG8AbwBsAGIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[Network]
+ReconnectDelay=10
+ReconnectRetries=20

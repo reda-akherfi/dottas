@@ -1,0 +1,8 @@
+[General]
+DisplayName=nerding_out
+Path[$e]=file:$HOME/nerding_out
+
+[KFileDialog Settings]
+Recent Files[$e]=nerding_out,file:$HOME/nerding_out
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16

@@ -1,0 +1,3 @@
+turn the packages into a list and install them using one pacman cmd
+better control flow for symlinks and misc in case it has already been done
+control the level of verbosity for pacman and yay when installing stuff

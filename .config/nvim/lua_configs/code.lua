@@ -1,0 +1,1 @@
+-- settings to make my coding experience as smooth as possible

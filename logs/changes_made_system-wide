@@ -1,0 +1,51 @@
+
+------------------------------------------------------------------------------------------
+     console font does not stick
+------------------------------------------------------------------------------------------
+Probably this is due to the vconsole being configured before your graphics drivers are loaded, and then the settings being lost when the drivers are loaded.
+
+You could try ordering vconsole-setup After=/Wants= systemd-udev-settle.service. That's a bit of a hack, and will slow down your boot a bit, but at least it will tell us what the problem is.
+(Specifically, I copied /usr/lib/systemd/system/systemd-vconsole-setup.service to /etc/systemd/system/, and then I put  systemd-udev-settle.service  into the  After=  and  Wants=  lines of that new file.)
+:: both After and Wants were added in the [Unit]
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+    systemd service for starting ydotool; might add stuff to it
+------------------------------------------------------------------------------------------
+############################################################
+# this is my own shit
+############################################################
+# allowing reda to start the ydotool daemon
+reda ALL=(ALL:ALL) NOPASSWD:/home/reda/dottas/scripts/start_ydotoold.sh
+
+
+created the service /etc/systemd/system/start_ydotool_on_startup.service
+    [Unit]
+    Description=Start the ydotool daemon at startup
+    After=graphical.target
+
+    [Service]
+    Type=forking    /*this fucker made me sweat*/
+    User=reda
+    ExecStartPre=/usr/bin/sleep 10
+    ExecStart=sudo /home/reda/dottas/scripts/start_ydotoold.sh
+
+    [Install]
+    WantedBy=graphical.target
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------
+    skipping entering the username on tty1
+------------------------------------------------------------------------------------------
+added the dir and file : /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -o '-p -- reda' --noclear --skip-login - $TERM
+then enable getty@tty1
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+

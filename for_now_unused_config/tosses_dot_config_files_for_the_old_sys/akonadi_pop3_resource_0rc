@@ -1,0 +1,8 @@
+[General]
+host=pop.gmail.com
+leaveOnServer=true
+login=redafrancophone2017@gmail.com
+name=POP3 Account
+port=995
+targetCollection=18
+useSSL=true

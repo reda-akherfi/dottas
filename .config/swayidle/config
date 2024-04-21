@@ -1,0 +1,8 @@
+
+
+
+
+
+timeout 150 'swaylock -f'
+timeout 200 'systemctl suspend' 
+before-sleep 'swaylock -f'

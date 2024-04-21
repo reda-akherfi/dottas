@@ -1,0 +1,7 @@
+[General]
+Path[$e]=file:$HOME/personal_dev
+
+[KFileDialog Settings]
+Recent Files[$e]=personal_dev,file:$HOME/personal_dev
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16

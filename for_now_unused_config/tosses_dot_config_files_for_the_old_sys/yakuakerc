@@ -1,0 +1,9 @@
+[Appearance]
+Skin=plastik_dark
+Translucency=true
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+Height=48
