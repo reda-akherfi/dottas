@@ -24,6 +24,7 @@ ln -sf ~/dottas/other_configs/.inputrc ~/.inputrc
 ln -sf ~/dottas/.config/vim  ~/.config/vim
 ln -sf ~/dottas/.config/vim/.vimrc  ~/.vimrc
 ln -sf ~/dottas/.config/nvim  ~/.config/nvim
+ln -sf ~/dottas/.config/vimiv  ~/.config/vimiv
 
 
 

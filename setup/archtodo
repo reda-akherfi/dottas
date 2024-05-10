@@ -1,0 +1,18 @@
+1. creating a func for encrypted lvm with grub
+2. kvm set up script
+3. we need to need to create a dialog wrapper function 
+4. we need to create a setup thaat continues the installation from where It stopped
+
+
+
+funcs:
+- partition the disk using lvm 
+    10G root partition; 40G+ /var/lib/libvirt LV; 50GB /home; 
+    a pacman/yay hook that creates a new snapshot; then deletes the one before the last; then updates pkgs
+    a way to check the health of the file system regularily
+- making the file system: ext4 for now
+- grub installation process:
+    use LUKS; LVM; secure boot; 
+    two kernels for security 
+    explore how to use TPM
+- a logging function that displays stuff instead of echo 

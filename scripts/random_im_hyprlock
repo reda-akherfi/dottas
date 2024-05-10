@@ -2,5 +2,5 @@
 
 
 rm -r ~/dottas/assets/hyprlock_random_picture/**
-path=$(find ~/dottas/assets/hyprlock_random_picture/nordic-wallpapers/ -type f -iname "*.png" -exec realpath {} \; | shuf --head-count 1)
+path=$(find ~/repos/nordic-wallpapers/wallpapers/ -type f -iname "*.png" -exec realpath {} \; | shuf --head-count 1)
 cp $path ~/dottas/assets/hyprlock_random_picture/randlock.png

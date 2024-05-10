@@ -204,3 +204,4 @@ source ~/dottas/.config/vim/modules/colorschemes/colors.vim
 source ~/dottas/.config/vim/modules/netrw/netrw_um.vim
 source ~/dottas/.config/vim/modules/vimwiki/vimwiki_um.vim
 source ~/dottas/.config/vim/modules/code/cpp.vim
+source ~/dottas/.config/vim/modules/keybinds/normal_mode_general.vim

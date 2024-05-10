@@ -15,3 +15,9 @@ sudo echo "FONT=ter-132b" >> /etc/vconsole.conf
 echo -e "# Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion" >> ~/dottas/other_configs/.bashrc
+
+
+###
+# rclone config
+# rclone --vfs-cache-mode writes mount Onedrive: ~/Onedrive &
+#

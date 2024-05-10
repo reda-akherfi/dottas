@@ -6,14 +6,17 @@
   "margin": 0,
   "modules-left": [
     "hyprland/workspaces",
-    "wlr/taskbar"
-  ],
-  "modules-center": [
+    "wlr/taskbar",
     "hyprland/window"
   ],
+  /* "modules-center": [ */
+  /* ], */
   "modules-right": [
     "idle_inhibitor",
-    "custom/weather",
+    /* "custom/weather", */
+    "cpu",
+    "disk",
+    "memory",
     "backlight",
     "wireplumber",
     "battery",
@@ -31,11 +34,11 @@
         "format-charging": "{capacity} <span color='#00ff00'>󰂄</span>",
         "format": "{capacity}% {icon}",
         "format-icons": ["" , "", "󱊡", "󱊢" , "󱊣"],
-        "max-length": 25,
+        /* "max-length": 25, */
         "tooltip": false
     },
     "wireplumber": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% <span color='#88c0d0'>{icon}</span>",
         "states": {
             "mute": 0,
             "running": 5
@@ -45,9 +48,17 @@
         "format-icons": ["", "", ""]
 
     },
+        "cpu": {
+        "format": "{usage}% <span foreground='#88c0d0'></span>",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
+        "on-click": "alacritty --class 'the war room' -e top"
+    },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{percent}% {icon}",
+        "format": "{percent}% <span color='#88c0d0'>{icon}</span>",
         "format-icons": ["󰃜", "󰃛", "", ""]
     },
   "wlr/taskbar": {
@@ -94,11 +105,36 @@
     "max-length": 128,
     "format": "{class}"
   },
-  "clock": {
-    "format": "{:%H:%M} ",
-    "interval": 60,
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
+    "disk": {
+        "format": "{percentage_free}% <span foreground='#88c0d0'></span>",
+        "states": {
+            "warning": 90,
+            "critical": 90
+        }
+    },
+    "memory": {
+        "format": "{}% <span foreground='#88c0d0'></span>",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "<span foreground='#88c0d0'></span> {:%a, %d %b  <span foreground='#88c0d0'></span> %H:%M}"
+    },
+  /* "clock": { */
+  /*   "format": "{:%H:%M} ", */
+  /*   "interval": 60, */
+  /*   "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>" */
+  /* }, */
   "tray": {
     "spacing": 6,
     "icon-size": 22
