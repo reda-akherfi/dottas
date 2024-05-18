@@ -27,5 +27,4 @@ install_inner_software_kvm() {
     pacman -S virt-{manager,viewer} qemu{,-arch-extra} 
 }
 
-echo "hello"
 symlinking_software_configs

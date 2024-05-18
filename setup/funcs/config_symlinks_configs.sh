@@ -20,4 +20,6 @@ declare -A symlinks=(
     ["/home/reda/.config/wofi"]="/home/reda/dottas/.config/wofi"
     ["/home/reda/.config/vimiv"]="/home/reda/dottas/.config/vimiv"
     ["/home/reda/.config/copyq"]="/home/reda/dottas/.config/copyq"
+    ["/home/reda/.config/tmux"]="/home/reda/dottas/.config/tmux"
+    ["/home/reda/.config/transmission-daemon"]="/home/reda/dottas/.config/transmission-daemon"
 )

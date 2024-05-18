@@ -5,7 +5,7 @@ root_passwd=Tzbg5340
 user_name=reda
 user_passwd=1966
 swap_file=/swapfile
-swap_file_size_gb=2024
+swap_file_size_gb=4096
 
 
 users_setup(){
@@ -37,11 +37,13 @@ networking_setup() {
     # set a static ip address for the ethernet connection
     # later docker setup
     # DNS using the LAN and google's as backup
+    true
 }
 
 install_inner_software() {
     # set up pacman and paru
     # install the package.list
+    true
 }
 
 setup_inner_software() {
@@ -58,10 +60,12 @@ bootloader_setup() {
     # setup and install grub for 2 kernels and the microcode
     # tweak any kernel params or customizations
     # setup a nice splash screen for vanity's sake
+    true
 }
 
 systemd_services_n_timers_system_user() {
     # console font ; pacman hook for LVM snapshots
+    true
 }
 
 swapfile_setup() {
@@ -80,10 +84,22 @@ swapfile_setup() {
         echo -e "the $swap_file already exists so going out with a 1";
         return 1;
     fi
+    # # Create the swap file
+    # fallocate -l "${swap_file_size_gb}"G "$swap_file"
+    # # Set appropriate permissions
+    # chmod 600 $swap_file
+    # if [[ $? -ne 0 ]]; then
+    #     echo -e "Error: Failed to set permissions on the swap file"
+    #     return 1
+    # fi
     # creating the swapfile
-    mkswap -U clear --size "$swap_file_size_gb"G --file "$swapfile"
+    mkswap -U clear --size "$swap_file_size_gb"G --file "$swap_file"
     echo -e "@@@@ just created the swapfile at  $swap_file  :: [[mkswap ...]]"
     swapon "$swap_file"
     echo -e "@@@@ just activated the swapfile :: [[swapon $swap_file]]"
     # adding add the swapfile to fstab
+    echo "/swapfile none swap defaults 0 0" >> /etc/fstab
+    ## use swapoff /swapfile before removing -f the /swapfile
 }
+
+swapfile_setup
