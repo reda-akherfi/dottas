@@ -1,0 +1,45 @@
+# General
+set selection-clipboard "clipboard"
+set window-title-home-tilde "true"
+set window-title-basename "true"
+set statusbar-basename "true"
+set adjust-open "best-fit"  # Open document in fit-width mode by default
+set pages-per-row 1         # One page per row by default
+#set render-loading "false"
+#set scroll-step 100
+
+# Font
+set font "JetBrainsMono Mono 10"
+
+# Recolor
+set recolor true
+set recolor-lightcolor "#24273A"
+set recolor-darkcolor "#CAD3F5"
+set recolor-reverse-video "true"
+set recolor-keephue "true"
+
+# Stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+
+# Padding
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+
+# Keys
+map K zoom in
+map J zoom out
+map i recolor
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map F follow
+map C display_link
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+# Source Colorscheme
+include zathura-solorized-dark
