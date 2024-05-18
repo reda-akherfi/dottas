@@ -228,4 +228,9 @@ install sdcv from the official repos; then download dictionaries from https://we
     less --quit-if-one-screen -RX
 }
                     ------ zathura ---------
-
+                    ------ vocage -------
+how to export .... Use File > Save a Copy.
+Goto the place, where you want to save the file.
+Choose the file type Text CSV (.csv) form the drop down list.
+Uncheck Automatic file name extension and enter the file name including the correct filename extension. CheckEdit filter settings. Click Save. Now you get a dialog for the settings.
+In the drop-down list field delimiter select the item {Tab}.
