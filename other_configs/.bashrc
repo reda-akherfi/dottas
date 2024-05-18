@@ -175,3 +175,4 @@ alias wo="sc-im ~/memalpha/words.sc"
 
 # aliases
 source ~/dottas/other_configs/bash_conf.d/bash_aliases
+source ~/dottas/other_configs/bash_conf.d/bash_env_vars

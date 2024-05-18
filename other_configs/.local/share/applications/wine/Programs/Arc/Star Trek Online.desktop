@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Star Trek Online
+Exec=env WINEPREFIX="/home/reda/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Arc\\\\Star\\ Trek\\ Online.lnk
+Type=Application
+StartupNotify=true
+Icon=8EB1_fc719bc8e61505d9ed216a4568d18a8d1426727746.0
+StartupWMClass=arclauncher.exe

@@ -1,3 +1,27 @@
 turn the packages into a list and install them using one pacman cmd
 better control flow for symlinks and misc in case it has already been done
 control the level of verbosity for pacman and yay when installing stuff
+
+
+
+
+-------------------------------------------------------------------------------------
+# First Part of Script for my arch installation with LVM
+
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+MAGENTA='\033[0;35m'
+RESET='\033[0m'
+
+enter_to_continue()
+{
+    echo -e "${MAGENTA}Press Enter to continue${RESET}"
+    read && clear
+}
+
+echo -e "${GREEN}Welcome to my arch installation script!\n${RESET}"
+echo -e "${GREEN}This is written by ${RESET}${RED}AmirKh20\n${RESET}"
+echo -e "${GREEN}My github: ${RESET}${RED}https://github.com/AmirKh20\n${RESET}"
+echo -e "${RED}WARNING: MAKE SURE YOU'VE EDITED THE SCRIPT\n${RESET}"
+enter_to_continue
+---------------------------------------------------------------------------------------

@@ -7,12 +7,13 @@
   "modules-left": [
     "hyprland/workspaces",
     "wlr/taskbar",
-    "hyprland/window"
+    "hyprland/window",
+    "hyprland/submap"
   ],
   /* "modules-center": [ */
   /* ], */
   "modules-right": [
-    "idle_inhibitor",
+    /* "idle_inhibitor", */
     /* "custom/weather", */
     "cpu",
     "disk",
@@ -23,6 +24,11 @@
     "tray",
     "clock"
   ],
+    "hyprland/submap": {
+        "format": "<span color='#88c0d0'>{}</span>",
+        "max-length": 20,
+        "tooltip": true
+    },
   "battery": {
         "bat": "BAT0",
         "interval": 60,
@@ -35,7 +41,8 @@
         "format": "{capacity}% {icon}",
         "format-icons": ["" , "", "󱊡", "󱊢" , "󱊣"],
         /* "max-length": 25, */
-        "tooltip": false
+        "tooltip": false,
+        /* "on-click": "systemctl suspend" */
     },
     "wireplumber": {
         "format": "{volume}% <span color='#88c0d0'>{icon}</span>",
@@ -44,8 +51,9 @@
             "running": 5
         },
         "format-mute": "󰸈",
-        "on-click": "helvum",
-        "format-icons": ["", "", ""]
+        "on-click": "systemctl --user start mpd; mpc play; alacritty --class 'rock N roll' -e ncmpcpp",
+        "format-icons": ["", "", ""],
+        "tooltip": false
 
     },
         "cpu": {
@@ -59,14 +67,17 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% <span color='#88c0d0'>{icon}</span>",
-        "format-icons": ["󰃜", "󰃛", "", ""]
+        "format-icons": ["󰃜", "󰃛", "", ""],
+        "tooltip": false,
+        "on-click": "alacritty --class 'rolling release love' -e  yay"
     },
   "wlr/taskbar": {
     "on-click": "activate",
     "on-click-middle": "close",
     "icon-size": 15,
     "ignore-list": [
-      "Alacritty"
+      "Alacritty",
+      "com.github.hluk.copyq"
     ]
   },
   "wlr/workspaces": {
@@ -110,14 +121,16 @@
         "states": {
             "warning": 90,
             "critical": 90
-        }
+        },
+        "on-click": "alacritty --class 'Let us clean the disk:' -e sudo ncdu /"
     },
     "memory": {
         "format": "{}% <span foreground='#88c0d0'></span>",
         "states": {
             "warning": 70,
             "critical": 90
-        }
+        },
+        "on-click": "alacritty"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -128,7 +141,8 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "<span foreground='#88c0d0'></span> {:%a, %d %b  <span foreground='#88c0d0'></span> %H:%M}"
+        "format": "<span foreground='#88c0d0'></span> {:%a, %b %d  <span foreground='#88c0d0'></span> %H:%M}",
+        "on-click": "alacritty --class 'all about the OCD' --command  /usr/bin/env bash -c  /usr/bin/calcurse "
     },
   /* "clock": { */
   /*   "format": "{:%H:%M} ", */

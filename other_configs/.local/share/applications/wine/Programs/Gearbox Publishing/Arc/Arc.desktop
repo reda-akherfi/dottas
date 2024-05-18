@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Arc
+Exec=env WINEPREFIX="/home/reda/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Gearbox\\ Publishing\\\\Arc\\\\Arc.lnk
+Type=Application
+StartupNotify=true
+Path=/home/reda/.wine/dosdevices/c:/Program Files (x86)/Arc
+Icon=3265_ArcLauncher.0
+StartupWMClass=arclauncher.exe

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Uninstall Arc
+Exec=env WINEPREFIX="/home/reda/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Gearbox\\ Publishing\\\\Arc\\\\Uninstall\\ Arc.lnk
+Type=Application
+StartupNotify=true
+Icon=8376_setup.0
+StartupWMClass=setup.exe

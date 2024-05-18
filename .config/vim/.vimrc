@@ -142,7 +142,7 @@ vnoremap k gk
 ""> buffer stuff
 nnoremap <leader>l :bn<CR>
 nnoremap <leader>h :bp<CR>
-nnoremap <leader>b :ls<CR>:b 
+" nnoremap <leader>b :ls<CR>:b 
 " nnoremap <leader>d :w<CR>:bd<CR>
 " nnoremap <leader>wq :wqa<CR>
 " nnoremap <leader>w :wa<CR>
@@ -177,6 +177,10 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
@@ -205,3 +209,7 @@ source ~/dottas/.config/vim/modules/netrw/netrw_um.vim
 source ~/dottas/.config/vim/modules/vimwiki/vimwiki_um.vim
 source ~/dottas/.config/vim/modules/code/cpp.vim
 source ~/dottas/.config/vim/modules/keybinds/normal_mode_general.vim
+" plugins
+source ~/dottas/.config/vim/modules/important_plugins/git_gutter.vim
+source ~/dottas/.config/vim/modules/important_plugins/fzf_vim_OSes_are_cool.vim
+source ~/dottas/.config/vim/modules/important_plugins/vim_airline_vanity.vim

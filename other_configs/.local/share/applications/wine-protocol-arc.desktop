@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=ArcLauncher
+MimeType=x-scheme-handler/arc;
+Exec=env WINEPREFIX="/home/reda/.wine" wine start %u
+NoDisplay=true
+StartupNotify=true
+Icon=3265_ArcLauncher.0

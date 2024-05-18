@@ -16,3 +16,12 @@ funcs:
     two kernels for security 
     explore how to use TPM
 - a logging function that displays stuff instead of echo 
+
+
+
+@@@@  setup transmission daemon with zenity; opens up transmission-remote -l with watch ...
+@@@@  setup paru plus add in the update workflow
+@@@   setup flatpak
+@@@@  setup all video conferencing tools on wayland: teams; meet; zoom ...
+@@@@  a full wine setup; learn arch linux
+@@@@  

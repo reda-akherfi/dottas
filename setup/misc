@@ -20,4 +20,6 @@ echo -e "# Use bash-completion, if available
 ###
 # rclone config
 # rclone --vfs-cache-mode writes mount Onedrive: ~/Onedrive &
+# rclone --vfs-cache-mode writes mount GDRIVE_AKHERFI68: ~/GDRIVE_AKHERFI68 &
+# fusermount -u /path/to/local/mount
 #

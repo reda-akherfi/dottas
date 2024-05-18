@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=BCUT
+Exec=env WINEPREFIX="/home/reda/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\BCS-TNG\\\\BCUT\\\\BCUT.lnk
+Type=Application
+StartupNotify=true
+Path=/home/reda/.wine/dosdevices/c:/Program Files (x86)/BCS-TNG/BCUT
+Icon=3834_BCUTIcon.0
+StartupWMClass=bcut.exe

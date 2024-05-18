@@ -1,0 +1,5 @@
+
+
+
+export CALCURSE_EDITOR=vim
+export VISUAL=vim

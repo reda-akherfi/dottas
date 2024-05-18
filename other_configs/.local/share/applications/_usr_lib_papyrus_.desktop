@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Papyrus
+Exec=/usr/lib/papyrus/papyrus %u
+NoDisplay=true
+Type=Application
+MimeType=x-scheme-handler/eclipse+command;x-scheme-handler/eclipse+mpc;
