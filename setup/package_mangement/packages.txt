@@ -1,16 +1,7 @@
-base
-base-devel
-bash-completion
-bind
-bluedevil
 bridge-utils
 brightnessctl
-calcurse
-clang
 cliphist
-copyq
 cozy-audiobooks
-cronie
 ctags
 cyrus-sasl
 cyrus-sasl-gssapi
@@ -18,14 +9,10 @@ dialog
 dnsmasq
 dracula-gtk-theme
 dropbox
-dunst
-efibootmgr
 ethtool
 ffmpegthumbnailer
-firefox
 flatpak
 foliate
-fzf
 gammastep
 gcc-fortran
 gdb
@@ -120,8 +107,6 @@ qt5-wayland
 qt5ct
 rclone
 redshift
-reflector
-ripgrep
 rofi
 rstudio-desktop
 sc-im
@@ -195,6 +180,3 @@ xsensors
 yay
 ydotool
 yt-dlp
-zathura
-zathura-pdf-mupdf
-zenity

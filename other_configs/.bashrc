@@ -167,7 +167,6 @@ function dict() {
 	less --quit-if-one-screen -RX
 }
 
-alias wo="sc-im ~/memalpha/words.sc"
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
