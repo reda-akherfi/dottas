@@ -3,3 +3,10 @@
 - window listing and choosing 
 - one for bianaries and the other for application entries
 - 
+
+--------------------------------------------------------------------------------
+                  --- bash-isms -----
+    Use #!/usr/bin/env bash, since you're using bash-isms like arrays, [[, and export -f.
+    In bash (not POSIX sh), you can read the contents of a file to a variable without abusing cat: contents=$(< file)
+    Use shellcheck to catch other gotchas. (You can paste the script there, or install shellcheck locally and run shellcheck ascript.sh.)
+

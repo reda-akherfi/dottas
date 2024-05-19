@@ -3,3 +3,4 @@
 
 export CALCURSE_EDITOR=vim
 export VISUAL=vim
+export COPYQ_THEME_PREFIX="/home/reda/dottas/.config/copyq/themes"

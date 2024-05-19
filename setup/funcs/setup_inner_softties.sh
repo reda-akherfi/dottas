@@ -24,7 +24,8 @@ install_inner_software_dropbox() {
 install_inner_software_kvm() {
     # installing software
     echo -e "#### we are going to start by installing needed software "
-    pacman -S virt-{manager,viewer} qemu{,-arch-extra} 
+    pacman -S virt-manager virt-viewer qemu qemu-arch-extra edk2-ovmf vde2 ebtables dnsmasq bridge-utils openbsd-netcat libguestfs
+    systemctl enable --now libvirtd.service
 }
 
 symlinking_software_configs
