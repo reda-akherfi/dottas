@@ -21,5 +21,8 @@ declare -A symlinks=(
     ["/home/reda/.config/vimiv"]="/home/reda/dottas/.config/vimiv"
     ["/home/reda/.config/copyq"]="/home/reda/dottas/.config/copyq"
     ["/home/reda/.config/tmux"]="/home/reda/dottas/.config/tmux"
+    ["/home/reda/.config/gtk-2.0"]="/home/reda/dottas/.config/gtk-2.0"
+    ["/home/reda/.config/gtk-3.0"]="/home/reda/dottas/.config/gtk-3.0"
+    ["/home/reda/.config/gtk-4.0"]="/home/reda/dottas/.config/gtk-4.0"
     ["/home/reda/.config/transmission-daemon"]="/home/reda/dottas/.config/transmission-daemon"
 )

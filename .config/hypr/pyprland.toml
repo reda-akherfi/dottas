@@ -20,6 +20,15 @@ size = "75% 60%"
 max_size = "1920px 100%"
 margin = 50
 
+
+[scratchpads.music]
+animation = "fromRight"
+command = "alacritty --class 'ROCK N ROLL' -e /usr/bin/ncmpcpp"
+class = "ROCK N ROLL"
+size = "80% 75%"
+max_size = "1920px 100%"
+margin = 50
+
 # [scratchpads.volume]
 # animation = "fromRight"
 # command = "pavucontrol"

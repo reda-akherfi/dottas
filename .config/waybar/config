@@ -42,7 +42,7 @@
         "format-icons": ["" , "", "󱊡", "󱊢" , "󱊣"],
         /* "max-length": 25, */
         "tooltip": false,
-        /* "on-click": "systemctl suspend" */
+        "on-click": "hyprctl dispatch togglespecialworkspace"
     },
     "wireplumber": {
         "format": "{volume}% <span color='#88c0d0'>{icon}</span>",
