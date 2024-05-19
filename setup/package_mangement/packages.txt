@@ -91,7 +91,6 @@ postgresql
 pyprland
 python-dbus
 python-gpgme
-python-html2text
 python-icalendar
 python-iwlib
 python-networkx
