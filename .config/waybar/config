@@ -62,21 +62,21 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "alacritty --class 'the war room' -e top"
+        "on-click": "foot sh -c 'top'"
     },
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% <span color='#88c0d0'>{icon}</span>",
         "format-icons": ["󰃜", "󰃛", "", ""],
         "tooltip": false,
-        "on-click": "alacritty --class 'rolling release love' -e  yay"
+        "on-click": "foot sh -c  'yay'"
     },
   "wlr/taskbar": {
     "on-click": "activate",
     "on-click-middle": "close",
     "icon-size": 15,
     "ignore-list": [
-      "Alacritty",
+      "foot",
       "com.github.hluk.copyq",
       "ROCK N ROLL",
       "kitty-dropterm"
@@ -124,7 +124,7 @@
             "warning": 90,
             "critical": 90
         },
-        "on-click": "alacritty --class 'Let us clean the disk:' -e sudo ncdu /"
+        "on-click": "foot sh -c  'sudo ncdu /'"
     },
     "memory": {
         "format": "{}% <span foreground='#88c0d0'></span>",
@@ -132,7 +132,7 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "alacritty"
+        "on-click": "foot"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -144,7 +144,7 @@
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "<span foreground='#88c0d0'></span> {:%a, %b %d  <span foreground='#88c0d0'></span> %H:%M}",
-        "on-click": "alacritty --class 'all about the OCD' --command  /usr/bin/env bash -c  /usr/bin/calcurse "
+        "on-click": "foot sh -c 'EDITOR=vim /usr/bin/env bash -c  /usr/bin/calcurse' "
     },
   /* "clock": { */
   /*   "format": "{:%H:%M} ", */
