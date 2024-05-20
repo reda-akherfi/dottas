@@ -181,6 +181,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'unblevable/quick-scope'
 call plug#end()
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
@@ -213,3 +214,4 @@ source ~/dottas/.config/vim/modules/keybinds/normal_mode_general.vim
 source ~/dottas/.config/vim/modules/important_plugins/git_gutter.vim
 source ~/dottas/.config/vim/modules/important_plugins/fzf_vim_OSes_are_cool.vim
 source ~/dottas/.config/vim/modules/important_plugins/vim_airline_vanity.vim
+source ~/dottas/.config/vim/modules/important_plugins/quickscope_horizontal_mvmvt.vim
