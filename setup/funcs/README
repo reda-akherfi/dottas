@@ -1,0 +1,4 @@
+
+disk.sh:  when PVs,VGs and LVs are removed it does it globally for the entire system
+            check if the pv is the intended target otherwise abort
+          add in more colors especially in the danger zone [disk selection]

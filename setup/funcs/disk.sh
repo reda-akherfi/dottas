@@ -4,6 +4,9 @@
 target_disk=NOTHING
 want_to_nuke_drive=HELLNO
 
+source ../bash_colors_source_me_everywhere.sh
+
+set -ex
 
 pinpoint_target_disk() {
     # pinpoint the disk to destroy
@@ -12,7 +15,9 @@ pinpoint_target_disk() {
     local not_yet=true;
     while [ $not_yet ];do
         for disk in $first_column_disks;do
-            echo -e "### is $disk is your desired disk";
+            echo -e "------------------------------------------\n"
+            lsblk -f /dev/$disk
+            echo -e "### is ${RED}$disk ${WHITE}is your desired disk";
             echo -e "### yes?no";
             read answer;
             if [[ $answer == "yes" ]];then
@@ -36,7 +41,20 @@ destroy_target_disk() {
     echo -e "### Do you really want to nuke /dev/${target_disk} yes or no?   " 
     read want_to_nuke_drive
     if [[ $want_to_nuke_drive == "yes" ]];then
-        dd if=/dev/zero of=/dev/${target_disk} bs=512 count=1;
+        # remove all LVs
+        for lv in $(lvs --noheadings -o lv_path);do
+            lvchange --activate n ${lv}
+            lvremove -f  ${lv}
+        done
+        # remove all VGs
+        for vg in $(vgs --noheadings -o vg_name);do
+            vgremove -f  ${vg}
+        done
+        # remove all PVs
+        for pv in $(pvs --noheadings -o pv_name);do
+            pvremove -f  ${pv}
+        done
+        wipefs --all --force /dev/"${target_disk}"
         echo -e "#### you have nuked /dev/$want_to_nuke_drive"
     else
         echo -e "#### you have decided not to zero over /dev/$target_disk"
@@ -45,16 +63,24 @@ destroy_target_disk() {
 
 set_up_lvm() {
     # no partitions; pv, vg, lvs, 
-    parted --fix --script /dev/${target_disk} mklabel "gpt"
-    parted --fix --script /dev/${target_disk} mkpart "EFIREDA" "fat32" 1MiB 300MiB
-    parted --fix --script /dev/${target_disk} set 1 esp on
-    parted --fix --script /dev/${target_disk} mkpart "LVMPVREDA" 301MiB 100%
-    pvcreate /dev/${target_disk}2
+    parted --fix --script /dev/"${target_disk}" mklabel "gpt"
+    parted --fix --script /dev/"${target_disk}" mkpart "EFIREDA" "fat32" 1MiB 500MiB
+    parted --fix --script /dev/"${target_disk}" set 1 esp on
+    parted --fix --script /dev/"${target_disk}" mkpart "LVMPVREDA" 501MiB 100%
+    pvcreate /dev/"${target_disk}"2
+    vgcreate vg0 /dev/"${target_disk}"2
+    lvcreate --yes --wipesignatures y -L 2G -n lv_root vg0
+    lvcreate --yes --wipesignatures y -L 3G -n lv_home vg0
+    lvcreate --yes --wipesignatures y -L 1G -n lv_swap vg0
 }
 
 set_up_filesystem() {
     # use ext4 and fat32 
-    true
+    echo -e "making the file system\n"
+    mkfs.fat -F 32 /dev/"${target_disk}"1
+    mkfs.ext4 /dev/vg0/lv_root
+    mkfs.ext4 /dev/vg0/lv_home
+    mkswap /dev/vg0/lv_swap
 }
 
 
