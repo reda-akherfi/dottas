@@ -1,1 +1,5 @@
 repos/**
+.config/tmux/plugins/**
+.config/transmission-daemon/resume/**
+.config/transmission-daemon/torrents/**
+
