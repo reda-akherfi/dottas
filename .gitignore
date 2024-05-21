@@ -4,4 +4,4 @@ repos/**
 .config/transmission-daemon/torrents/**
 .config/copyq/copy*
 !.config/copyq/themes/
-
+.config/transmission-daemon/stats.json
