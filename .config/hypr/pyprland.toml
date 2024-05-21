@@ -23,7 +23,7 @@ margin = 50
 
 [scratchpads.music]
 animation = "fromRight"
-command = "foot sh -c 'ncmpcpp'"
+command = "alacritty --class 'ROCK N ROLL' -e /usr/bin/ncmpcpp"
 class = "ROCK N ROLL"
 size = "80% 75%"
 max_size = "1920px 100%"
