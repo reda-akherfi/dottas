@@ -15,6 +15,7 @@
   "modules-right": [
     /* "idle_inhibitor", */
     /* "custom/weather", */
+    "custom/window_count_hyprland",
     "cpu",
     "disk",
     "memory",
@@ -162,6 +163,13 @@
     "tooltip": true,
     "interval": 900
   },
+  "custom/window_count_hyprland": {
+    "exec": "/home/reda/dottas/scripts/waybar_hyprland_count_windows_workspace.sh",
+    "interval": "once",
+    "signal": 8,
+    "format": "{} <span foreground='#88c0d0'>󰣇</span>",
+    "return-type": "json"
+    },
   "hyprland/language": {
     "format-pl": "[pl]",
     "format-en": "[us]",
