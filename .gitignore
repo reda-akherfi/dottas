@@ -3,5 +3,5 @@ repos/**
 .config/transmission-daemon/resume/**
 .config/transmission-daemon/torrents/**
 .config/copyq/**
-!.config/copyq/themes/**
+!.config/copyq/themes/
 
