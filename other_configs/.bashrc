@@ -175,3 +175,5 @@ function dict() {
 # aliases
 source ~/dottas/other_configs/bash_conf.d/bash_aliases
 source ~/dottas/other_configs/bash_conf.d/bash_env_vars
+source /home/reda/dottas/.config/lf/scripts/lfcd.sh
+bind '"\C-o":"lfcd\C-m"'
