@@ -5,3 +5,7 @@ repos/**
 .config/copyq/copy*
 !.config/copyq/themes/
 .config/transmission-daemon/stats.json
+.config/mpd/database
+.config/transmission-daemon/dht.dat
+assets/hyprlock_random_picture/randlock.png
+
