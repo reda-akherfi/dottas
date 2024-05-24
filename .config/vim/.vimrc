@@ -171,6 +171,10 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 set rtp+=~/.vim/plugins/
 source ~/.vim/plugins/AutoSave.vim
 
+"" automating the installation of vim plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
