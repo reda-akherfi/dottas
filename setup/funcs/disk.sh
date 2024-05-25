@@ -91,10 +91,6 @@ mount_partitions() {
     mount --mkdir /dev/vg0/lv_home /mnt/home
 }
 
-update_fstab() {
-    # 
-    genfstab -U /mnt >> /mnt/etc/fstab
-}
 
 # here the show begins
 umount -R /mnt{,/boot,/home}
@@ -107,4 +103,3 @@ destroy_target_disk;
 set_up_lvm
 set_up_filesystem
 mount_partitions
-update_fstab

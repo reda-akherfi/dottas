@@ -5,4 +5,7 @@ nnoremap <silent><C-l> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><C-h> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
 
+nnoremap <leader>yy :set nonumber norelativenumber<CR>
+nnoremap <leader>yu :set number relativenumber<CR>
+
 
