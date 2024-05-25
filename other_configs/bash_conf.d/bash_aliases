@@ -4,3 +4,4 @@
 alias d="cd ~/dottas/"
 alias  asas='cat /sys/class/power_supply/BAT0/{capacity,status}'
 alias  dot='git add .; git commit -m "update"; git push -u origin main'
+alias  virti='sudo ~/projects/devops_scripts/kvm/virtinstall_debian.sh'
