@@ -16,6 +16,7 @@
     /* "idle_inhibitor", */
     /* "custom/weather", */
     "custom/window_count_hyprland",
+    "network",
     "cpu",
     "disk",
     "memory",
@@ -30,6 +31,20 @@
         "max-length": 20,
         "tooltip": true
     },
+"network": {
+	/* "interface": "wlp0s20f3", */
+	"format-wifi": "{bandwidthDownOctets}↓↑{bandwidthUpOctets} <span color='#88c0d0'></span>", 
+	"format-ethernet": "{bandwidthDownOctets}↓↑{bandwidthUpOctets} <span color='#88c0d0'>󰈀</span>", 
+	/* "format-wifi": "{essid} ({signalStrength}%) ", */
+	/* "format-ethernet": "{ifname} ", */
+	"format-disconnected": "", //An empty format will hide the module.
+	/* "format-disconnected": "", */
+    "interval": 1,
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected",
+},
   "battery": {
         "bat": "BAT0",
         "interval": 60,
