@@ -2,6 +2,7 @@
 
 
 nnoremap <leader>z :GFiles<Cr>
+nnoremap <leader>q :Files<Cr>
 
 nnoremap <leader>g :Rg<Cr>
 
