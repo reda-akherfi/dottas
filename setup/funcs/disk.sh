@@ -4,9 +4,9 @@
 target_disk=NOTHING
 want_to_nuke_drive=HELLNO
 
-source ../bash_colors_source_me_everywhere.sh
+source ~/dottas/setup/bash_colors_source_me_everywhere.sh
 
-set -ex
+# set -ex
 
 pinpoint_target_disk() {
     # pinpoint the disk to destroy
