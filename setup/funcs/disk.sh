@@ -97,7 +97,7 @@ update_fstab() {
 }
 
 # here the show begins
-umount -R /mnt
+umount -R /mnt{,/boot,/home}
 pinpoint_target_disk;
 while [[ $target_disk == "NOTHING" ]];do
     echo -e "#### you have not selected a disk yet?";
