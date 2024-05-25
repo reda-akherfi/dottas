@@ -88,12 +88,12 @@ mount_partitions() {
     # / /boot  and /home 
     mount --mkdir  /dev/${target_disk}1 /mnt/boot
     mount /dev/vg0/lv_root  /mnt
-    mount /dev/vg0/lv_home /mnt/home
+    mount --mkdir /dev/vg0/lv_home /mnt/home
 }
 
 update_fstab() {
     # 
-    true
+    genfstab -U /mnt >> /mnt/etc/fstab
 }
 
 # here the show begins
