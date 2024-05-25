@@ -18,7 +18,7 @@ pinpoint_target_disk() {
             echo -e "------------------------------------------\n"
             lsblk -f /dev/$disk
             echo -e "### is ${RED}$disk ${WHITE}is your desired disk";
-            echo -e "### yes?no";
+            echo -e "### yes?no ";
             read answer;
             if [[ $answer == "yes" ]];then
                 target_disk=$disk;
@@ -69,9 +69,9 @@ set_up_lvm() {
     parted --fix --script /dev/"${target_disk}" mkpart "LVMPVREDA" 501MiB 100%
     pvcreate /dev/"${target_disk}"2
     vgcreate vg0 /dev/"${target_disk}"2
-    lvcreate --yes --wipesignatures y -L 2G -n lv_root vg0
+    lvcreate --yes --wipesignatures y -L 5G -n lv_root vg0
     lvcreate --yes --wipesignatures y -L 3G -n lv_home vg0
-    lvcreate --yes --wipesignatures y -L 1G -n lv_swap vg0
+    # lvcreate --yes --wipesignatures y -L 1G -n lv_swap vg0
 }
 
 set_up_filesystem() {
@@ -80,13 +80,15 @@ set_up_filesystem() {
     mkfs.fat -F 32 /dev/"${target_disk}"1
     mkfs.ext4 /dev/vg0/lv_root
     mkfs.ext4 /dev/vg0/lv_home
-    mkswap /dev/vg0/lv_swap
+    # mkswap /dev/vg0/lv_swap
 }
 
 
 mount_partitions() {
     # / /boot  and /home 
-    true
+    mount --mkdir  /dev/${target_disk}1 /mnt/boot
+    mount /dev/vg0/lv_root  /mnt
+    mount /dev/vg0/lv_home /mnt/home
 }
 
 update_fstab() {
