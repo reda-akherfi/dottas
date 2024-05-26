@@ -16,3 +16,13 @@ tuned
 vocage-git
 wlogout
 wofi-pass
+
+##################################################
+linux
+linux-firmware
+linux-headers
+linux-lts
+python-icalendar
+
+lxappearance
+vocage-git
