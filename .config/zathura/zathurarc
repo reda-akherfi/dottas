@@ -37,6 +37,8 @@ map D toggle_page_mode
 map r reload
 map R rotate
 map F follow
+map { half-up
+map } half-down
 map C display_link
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen

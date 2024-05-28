@@ -132,7 +132,7 @@
      },
   "hyprland/window": {
     "max-length": 128,
-    "format": "{class}"
+    "format": "{initialTitle}"
   },
     "disk": {
         "format": "{percentage_free}% <span foreground='#88c0d0'></span>",

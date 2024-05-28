@@ -93,13 +93,13 @@ mount_partitions() {
 
 
 # here the show begins
-umount -R /mnt{,/boot,/home}
+#umount -R /mnt{,/boot,/home}
 pinpoint_target_disk;
 while [[ $target_disk == "NOTHING" ]];do
     echo -e "#### you have not selected a disk yet?";
     pinpoint_target_disk;
 done
 destroy_target_disk;
-set_up_lvm
-set_up_filesystem
-mount_partitions
+#set_up_lvm
+#set_up_filesystem
+#mount_partitions
