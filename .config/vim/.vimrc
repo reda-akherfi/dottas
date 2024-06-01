@@ -120,16 +120,16 @@ map <2-LeftMouse> g<c-]>
 """   setting up key mappings 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""> switching between modes
-inoremap jk <Esc>
-inoremap kj <Esc>
+" inoremap jk <Esc>
+" inoremap kj <Esc>
 " nnoremap ; :
 " nnoremap : ;
-nnoremap <leader>; ;
-vnoremap ;l <Esc>
+" nnoremap <leader>; ;
+" vnoremap ;l <Esc>
 ""> saving and quitting stuff
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>x :x<CR>
+" nnoremap <leader>w :w<CR>
+" nnoremap <leader>q :q<CR>
+" nnoremap <leader>x :x<CR>
 ""> navigating text in normal mode
 nnoremap { }
 nnoremap } {
