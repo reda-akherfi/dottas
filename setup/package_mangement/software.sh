@@ -78,7 +78,7 @@ install_yay() {
 
 function install_paru() {
     sudo pacman -S base-devel --needed --noconfirm 
-    git clone https://aur.archlinux.org/paru.git ~
+    git clone https://aur.archlinux.org/paru.git ~/paru
     cd ~/paru
     makepkg -si
 }
