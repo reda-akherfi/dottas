@@ -67,7 +67,7 @@
             "running": 5
         },
         "format-mute": "󰸈",
-        "on-click": "systemctl --user start mpd; mpc play; /usr/bin/pypr toggle music",
+        "on-click": "/usr/bin/pypr toggle music",
         "format-icons": ["", "", ""],
         "tooltip": false
 

@@ -74,5 +74,13 @@ install_yay() {
     makepkg -si
 }
 
-yay -S --needed --noconfirm - < /home/reda/dottas/setup/package_mangement/pkgreda
+# yay -S --needed --noconfirm - < /home/reda/dottas/setup/package_mangement/pkgreda
 
+function install_paru() {
+    sudo pacman -S base-devel --needed --noconfirm 
+    git clone https://aur.archlinux.org/paru.git ~
+    cd ~/paru
+    makepkg -si
+}
+install_paru
+paru -S --needed --noconfirm - < /home/reda/dottas/setup/package_mangement/pkgreda
