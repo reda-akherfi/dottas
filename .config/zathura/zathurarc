@@ -8,8 +8,6 @@ set pages-per-row 1         # One page per row by default
 set render-loading "false"
 set scroll-step 50
 
-# Font
-set font "RobotoMono Nerd Font Mono"
 
 # Recolor
 # set recolor true
@@ -30,6 +28,7 @@ set page-padding 1
 # XXX zoom options
 set zoom-min 10
 set guioptions ""
+
 
 
 # Keys
@@ -100,3 +99,5 @@ map [index] <Tab> navigate_index toggle
 # Unfortunately, there is no "toggle-all":
 map [index] <ShiftTab> navigate_index expand-all
 map [index] <A-ShiftTab> navigate_index collapse-all
+
+
