@@ -23,5 +23,5 @@ install_inner_software_dropbox() {
 
 # install_inner_software_kvm
 
-/home/reda/dottas/setup/package_mangement/software.sh
+# /home/reda/dottas/setup/package_mangement/software.sh
 symlinking_software_configs

@@ -27,4 +27,5 @@ declare -A symlinks=(
     ["/home/reda/.config/gtk-3.0"]="/home/reda/dottas/.config/gtk-3.0"
     ["/home/reda/.config/gtk-4.0"]="/home/reda/dottas/.config/gtk-4.0"
     ["/home/reda/.config/transmission-daemon"]="/home/reda/dottas/.config/transmission-daemon"
+    ["/home/reda/.config/libinput-gestures.conf"]="/home/reda/dottas/.config/libinput-gestures.conf"
 )

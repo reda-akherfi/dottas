@@ -69,7 +69,8 @@
         "format-mute": "󰸈",
         "on-click": "/usr/bin/pypr toggle music",
         "format-icons": ["", "", ""],
-        "tooltip": false
+        "tooltip": false,
+        "reverse-scrolling": true
 
     },
         "cpu": {
@@ -85,7 +86,8 @@
         "format": "{percent}% <span color='#88c0d0'>{icon}</span>",
         "format-icons": ["󰃜", "󰃛", "", ""],
         "tooltip": false,
-        "on-click": "tmux new-window -t spock -n update yay; hyprctl dispatch togglespecialworkspace"
+        "on-click": "tmux new-window -t spock -n update yay; hyprctl dispatch togglespecialworkspace",
+        "reverse-scrolling": true
     },
   "wlr/taskbar": {
     "on-click": "activate",

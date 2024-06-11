@@ -8,9 +8,11 @@ plugins = [
   "expose",
   "shift_monitors",
   "workspaces_follow_focus",
+   "fetch_client_menu",
 ]
 
-
+# [fetch_client_menu]
+# engine = wofi
 
 [scratchpads.term]
 animation = "fromTop"
