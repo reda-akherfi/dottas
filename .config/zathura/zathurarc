@@ -27,7 +27,7 @@ set page-padding 1
 
 # XXX zoom options
 set zoom-min 10
-set guioptions ""
+set guioptions "s"
 
 
 
@@ -51,6 +51,12 @@ map S adjust_window best-fit
 # Source Colorscheme
 # include zathura-solorized-dark
 
+# mappings
+unmap <Space>
+map p feedkeys ":nohlsearch <Return>"
+map [presentation] f follow
+map [normal] P toggle_presentation
+map [presentation] P toggle_presentation
 
 # zathurarc-dark
 

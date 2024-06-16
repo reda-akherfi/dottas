@@ -6,7 +6,7 @@ key_up=Ctrl-k
 
 
 # If true activiating a search with enter will execute the search not the first result, default is false.
-matching=fuzzy
+matching=multi-contains
 insensitive=true
 # content_halign=center
 # valign=center

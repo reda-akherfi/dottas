@@ -4,6 +4,7 @@
 
 declare -A symlinks=(
     ["/home/reda/.bashrc"]="/home/reda/dottas/other_configs/.bashrc"
+    ["/home/reda/.bash_profile"]="/home/reda/dottas/other_configs/.bash_profile"
     ["/home/reda/.inputrc"]="/home/reda/dottas/other_configs/.inputrc"
     ["/home/reda/.vimrc"]="/home/reda/dottas/.config/vim/.vimrc"
     ["/home/reda/.config/zathura"]="/home/reda/dottas/.config/zathura"

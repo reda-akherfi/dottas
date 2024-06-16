@@ -1,0 +1,200 @@
+# zathura is absolutely necessary
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
+
+# learning tools
+wireshark-cli
+gdb
+vnstat  # tracking network usage per interface
+traceroute
+openbsd-netcat # tcp and udp stuff XXX learn how to use it as well as its relation with kvm 
+netstat-nat # enable netfilter in the kernel and play with it XXX
+net-tools # has the  netstat command with is amaze
+mypy # optional static typing for python
+android-tools
+
+
+# sound stuff
+wireplumber
+timidity++ # a SW synthesizer that play midi... real time rendering to either a file or  a sound card ...
+sof-firmware # sound open firmware: see the project on github
+picard
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+pipewire-session-manager
+libpulse
+alsa-plugins
+alsa-utils
+
+# wine stuff
+wine-mono
+wine-staging
+winetricks
+# 32 bits packages
+lib32-gnutls
+lib32-libxcomposite
+lib32-pipewire
+lib32-vulkan-intel
+
+# linux utilities
+whois  # has mkpasswd
+unrar-free
+zip
+unzip
+tree
+bash-completion
+brightnessctl
+clang
+ctags
+cronie
+dialog
+tldr
+shellcheck
+ripgrep
+reflector
+perl-image-exiftool # read and write metadata in and of files XXX what are exif data and why would I want to remove exif info from a file
+network-manager-applet
+networkmanager
+nfs-utils
+netctl
+lshw
+jq
+jpegoptim
+
+# used for books + pdfs + videos + screenshotting...
+zenity
+
+# window manager utilities
+ydotool
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+xdg-user-dirs-gtk
+wtype
+wofi
+wev
+swaybg
+hypridle
+hyprlock
+slurp
+slop  # selects a part of the screen and print its dimensions  to the screen
+qt5-wayland
+qt5ct
+qt6ct
+polkit-kde-agent
+pop-gtk-theme
+papirus-icon-theme
+nwg-look
+kvantum
+hyprland
+i3lock
+grim
+go
+
+# big packages
+remmina
+firefox
+fzf
+git
+waybar
+vim
+vimiv
+transmission-cli
+tmux
+thunderbird
+speech-dispatcher  # maybe the flatpak package pied
+shotcut # my fav minimal video editor
+pass
+obs-studio
+ncmpcpp
+ncdu
+mpc
+mpd
+mpv
+mediainfo # give info about media files XXX how useful is it exactly?
+lynx
+libreoffice-fresh
+lf
+kitty
+alacritty
+foot
+foot-terminfo
+dunst
+copyq
+calcurse
+
+# fonts
+ttf-font-awesome
+ttf-nerd-fonts-symbols
+ttf-roboto
+ttf-roboto-mono
+ttf-roboto-mono-nerd
+terminus-font
+otf-font-awesome
+
+# virtualization; kvm
+vulkan-virtio
+virt-manager
+virt-viewer
+vde2  # vga passthrough for qemu
+swtpm # tpm emulator based on libtpms
+qemu-base
+qemu-full
+libksysguard # manipulate VM disks 
+guestfs-tools
+cloud-image-utils
+
+
+# python stuff
+python-dbus
+python-gpgme
+python-iwlib
+python-pylint
+
+# xorg stuff
+xorg-docs
+xorg-fonts-encodings
+xorg-server-common
+xorg-setxkbmap
+xorg-xinput
+xorg-xkbcomp
+xorg-xprop
+xorg-xrandr
+xorg-xset
+xorg-xwayland
+# video drivers
+xf86-video-vesa:
+            xf86-video-vesa which is a fallback driver for very old machines. You also don't need xf86-video-intel if you have a recent (Sandy Bridge+) Intel graphics card, because those are better supported by the generic modesetting driver that's built into Xorg.
+
+# core stuff
+base
+base-devel
+bridge-utils
+ethtool
+efibootmgr
+dnsmasq
+linux
+linux-firmware
+linux-headers
+linux-lts
+libksysguard # hardware info 
+inxi  # hardware info / sys info
+iptables-nft
+intel-ucode
+inotify-tools
+man-db
+
+# to check on
+tlp
+tlp-rdw
+syslog-ng #  XXX
+socat   # XXX
+sdcv   # script it up
+npm # XXX used for coc and later on to work with javascript [maybe with VMs instead]
+cyrus-sasl
+cyrus-sasl-gssapi

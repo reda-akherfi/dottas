@@ -1,1 +1,5 @@
 - archives the content and then clears cliphist; it then puts it into some predefined dir. [keybind it]
+
+
+- /usr/share/applications/brave-browser-nightly.desktop 
+    Exec=/home/reda/dottas/scripts/brave_workspace1_link_handler.sh %U
