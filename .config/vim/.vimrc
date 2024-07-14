@@ -137,6 +137,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'unblevable/quick-scope'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
@@ -152,3 +153,4 @@ source ~/dottas/.config/vim/modules/important_plugins/fzf_vim_OSes_are_cool.vim
 source ~/dottas/.config/vim/modules/important_plugins/vim_airline_vanity.vim
 source ~/dottas/.config/vim/modules/important_plugins/quickscope_horizontal_mvmvt.vim
 source ~/dottas/.config/vim/modules/important_plugins/cocky.vim
+source ~/dottas/.config/vim/modules/funcs/delete_empty_no_name_buffers.vim
