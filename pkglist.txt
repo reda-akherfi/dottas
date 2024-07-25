@@ -6,6 +6,7 @@ base
 base-devel
 bash-completion
 clang
+deluge-gtk
 dmidecode
 dnsmasq
 docker
@@ -72,6 +73,9 @@ libvirt
 linux
 linux-firmware
 linux-lts
+lld
+llvm
+lostfiles
 loupe
 malcontent
 man-db
@@ -83,6 +87,7 @@ networkmanager
 nodejs
 npm
 orca
+pacutils
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -91,6 +96,7 @@ python-pip
 qbittorrent
 qemu-full
 qemu-img
+rebuild-detector
 reflector
 rygel
 seahorse
@@ -102,7 +108,7 @@ swtpm
 tecla
 tmux
 tracker3-miners
-transmission-gtk
+tree
 ttf-roboto
 ttf-roboto-mono-nerd
 ufw
@@ -126,4 +132,5 @@ xf86-video-vmware
 xorg-server
 xorg-xinit
 yelp
+zoxide
 zram-generator
