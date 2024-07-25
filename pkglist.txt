@@ -86,6 +86,7 @@ network-manager-applet
 networkmanager
 nodejs
 npm
+obsidian
 orca
 pacutils
 pipewire
@@ -98,6 +99,7 @@ qemu-full
 qemu-img
 rebuild-detector
 reflector
+ripgrep
 rygel
 seahorse
 smartmontools
