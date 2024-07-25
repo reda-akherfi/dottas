@@ -46,18 +46,18 @@ set menu-complete-display-prefix On
 ### searching through history
 ######################################################################
 set completion-ignore-case on
-$if mode=vi
-set keymap vi-command
-# these are for vi-command mode
-"\e[A": history-search-backward
-"\e[B": history-search-forward
-j: history-search-forward
-k: history-search-backward
-set keymap vi-insert
-# these are for vi-insert mode
-"\e[A": history-search-backward
-"\e[B": history-search-forward
-$endif
+# $if mode=vi
+# set keymap vi-command
+# # these are for vi-command mode
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward
+# j: history-search-forward
+# k: history-search-backward
+# set keymap vi-insert
+# # these are for vi-insert mode
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward
+# $endif
 
 # one tab for completion
 #set show-all-if-unmodified on
@@ -71,5 +71,8 @@ set enable-bracketed-paste on
 # "\C-f":"cd /home/reda/.config/\n"
 # "\eb":"cd ..\n"
 # "\eh":"cd /home/reda/\n"
-# "\ed":"cd /home/reda/dotfiles/.config/\n"
-"\er":"lf\n"
+"\ed":"cd /home/reda/dotfiles/.config/\n"
+"\eu":"paru -Syu\n"
+"\e[1;9D": backward-word
+"\e[1;9C": forward-word
+"\es": "\C-asudo \C-e"
