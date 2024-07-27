@@ -126,6 +126,8 @@ set rtp+=~/.vim/plugins/
 "" automating the installation of vim plug
 ""curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+let g:polyglot_disabled = ['markdown']
+
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
@@ -139,6 +141,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'unblevable/quick-scope'
 Plug 'vimwiki/vimwiki'
+Plug 'sheerun/vim-polyglot'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+Plug 'github/copilot.vim'
+Plug 'dense-analysis/ale'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 call plug#end()
 
 
@@ -155,3 +164,4 @@ source ~/dottas/.config/vim/modules/important_plugins/vim_airline_vanity.vim
 source ~/dottas/.config/vim/modules/important_plugins/quickscope_horizontal_mvmvt.vim
 source ~/dottas/.config/vim/modules/important_plugins/cocky.vim
 source ~/dottas/.config/vim/modules/funcs/delete_empty_no_name_buffers.vim
+source ~/dottas/.config/vim/modules/important_plugins/markdown_stuff.vim

@@ -93,6 +93,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+python-gpgme
 python-pip
 qbittorrent
 qemu-full
@@ -108,11 +109,14 @@ sof-firmware
 sushi
 swtpm
 tecla
+timeshift
 tmux
 tracker3-miners
 tree
 ttf-roboto
 ttf-roboto-mono-nerd
+ttf-ubuntu-mono-nerd
+ttf-ubuntu-nerd
 ufw
 vim
 virt-install

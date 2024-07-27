@@ -157,9 +157,9 @@ mods = "Shift"
 [mouse]
 hide_when_typing = false
 
-[[mouse.bindings]]
-action = "Paste"
-mouse = "Middle"
+# [[mouse.bindings]]
+# action = "Paste"
+# mouse = "Middle"
 
 [scrolling]
 history = 2500

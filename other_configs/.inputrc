@@ -73,6 +73,8 @@ set enable-bracketed-paste on
 # "\eh":"cd /home/reda/\n"
 "\ed":"cd /home/reda/dotfiles/.config/\n"
 "\eu":"paru -Syu\n"
+"\ei":"sudo pacman -S   "
+"\eo":"sudo pacman -Rns   "
 "\e[1;9D": backward-word
 "\e[1;9C": forward-word
 "\es": "\C-asudo \C-e"
