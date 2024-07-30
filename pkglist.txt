@@ -107,6 +107,7 @@ rebuild-detector
 reflector
 ripgrep
 rygel
+sbctl
 seahorse
 smartmontools
 snapshot
