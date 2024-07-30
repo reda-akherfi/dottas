@@ -1,5 +1,6 @@
 alacritty
 alsa-utils
+archiso
 at
 baobab
 base
@@ -36,6 +37,7 @@ gnome-keyring
 gnome-logs
 gnome-menus
 gnome-music
+gnome-power-manager
 gnome-remote-desktop
 gnome-session
 gnome-settings-daemon
@@ -63,9 +65,11 @@ gvfs-nfs
 gvfs-onedrive
 gvfs-smb
 gvfs-wsdd
+htop
 intel-media-driver
 intel-ucode
 iwd
+libappindicator-gtk2
 libpulse
 libva-intel-driver
 libva-mesa-driver
@@ -93,11 +97,12 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-python-gpgme
+powertop
 python-pip
 qbittorrent
 qemu-full
 qemu-img
+rclone
 rebuild-detector
 reflector
 ripgrep
